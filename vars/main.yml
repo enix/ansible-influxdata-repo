@@ -1,0 +1,7 @@
+---
+
+influxdata__apt_repo: "deb https://repos.influxdata.com/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }} stable"
+influxdata__yum_repo_url: https://repos.influxdata.com/rhel/{{ ansible_distribution_major_version }}/{{ ansible_architecture }}/stable
+
+influxdata__gpg_file: influxdb.key
+influxdata__gpg_url: https://repos.influxdata.com/influxdb.key

@@ -1,0 +1,16 @@
+---
+
+- name: 'RedHat: Add influxdata GPG key'
+  rpm_key:
+    state: present
+    key: "{{ influxdata__gpg_url }}"
+
+- name: 'RedHat: Create influxdata yum repo'
+  yum_repository:
+    name: influxdata
+    description: InfluxDB Repository - RHEL {{ ansible_distribution_release }}
+    baseurl: "{{ influxdata__yum_repo_url }}"
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: "{{ influxdata__gpg_url }}"
+    state: present
