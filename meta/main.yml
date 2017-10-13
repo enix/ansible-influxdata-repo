@@ -100,9 +100,11 @@ galaxy_info:
   #  - lenny
   #  - squeeze
     - wheezy
+    - stretch
 
   galaxy_tags:
     - influxdata
+    - TICK
     - InfluxDB
 
 dependencies: []

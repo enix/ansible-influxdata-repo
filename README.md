@@ -10,6 +10,7 @@ Supported targets:
 
 - Debian 7 "wheezy"
 - Debian 8 "Jessie"
+- Debian 9 "Stretch"
 - Ubuntu 16.04 "Xenial"
 - RedHat EL / CentOS 6
 - RedHat EL / CentOS 7
@@ -51,6 +52,9 @@ Still to do
 
 Changelog
 ---------
+
+### 1.1
+Add Debian Stretch support
 
 ### 1.0
 
